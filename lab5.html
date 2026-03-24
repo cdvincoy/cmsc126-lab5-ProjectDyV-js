@@ -1,19 +1,25 @@
+<!--
+lab5.html
+This is the source page for the Lab Exercise 5: JavaScript.
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lab 5</title>
-        <!-- <link rel="icon" type="image/x-icon" href=""> -->
+        <title>Student Registration</title>
         <link rel="stylesheet" type="text/css" href="lab5_styles.css">
     </head>
     <body id="main">
+        <!--This part displays the time.-->
         <div id="time_display">
             <button class="button-1" type="button" onclick="time_now()">Show Current Date</button>
             <p id="output-1"></p>
             <script src="lab5_scripts.js"></script>
         </div>
 
+        <!--This part displays the form for the student registration.-->
         <div id="form_display">
             <h2>Student Registration</h2>
             <form id="studentForm">
@@ -42,19 +48,19 @@
         </div>
 
         <hr>
-        
+        <!--This part displays the search section.-->
         <div id="search_display">
             <input type="text" id="search_id" placeholder="Enter Student ID">
             <button class="button-3" type="button" onclick="find_student()">Search Student</button>
             <p id="output-3"></p>
         </div>
 
+        <!--This part displays the all the students in the record.-->
         <div id="record_display">
             <h3>Display All Students</h3>
             <button class="button-4" type="button" onclick="display_list()">Display All</button>
             <button class="button-4" type="button" onclick="hide_list()">Hide</button>
             <p id="output-4"></p>
         </div>
-
     </body>
 </html>
