@@ -4,11 +4,57 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lab 5</title>
-        <!-- <link rel="icon" type="image/x-icon" href="">
-        <link rel="stylesheet" type="text/css" href=""> -->
-        <script src="lab5_scripts.js"></script>
+        <!-- <link rel="icon" type="image/x-icon" href=""> -->
+        <link rel="stylesheet" type="text/css" href="lab5_styles.css">
     </head>
-    <body>
+    <body id="main">
+        <div id="time_display">
+            <button class="button-1" type="button" onclick="time_now()">Show Current Date</button>
+            <p id="output-1"></p>
+            <script src="lab5_scripts.js"></script>
+        </div>
+
+        <div id="form_display">
+            <h2>Student Registration</h2>
+            <form id="studentForm">
+                <label>Name:</label><br>
+                <input type="text" id="name"><br><br>
+
+                <label>Age:</label><br>
+                <input type="number" id="age"><br><br>
+
+                <label>Email:</label><br>
+                <input type="text" id="email"><br><br>
+
+                <label>Course:</label><br>
+                <select id="course">
+                    <option value="">--Select Course--</option>
+                    <option>BA Food Appreciation</option>
+                    <option>BA Applied Poetry of the Future</option>
+                    <option>BS Computer Repair Shop</option>
+                    <option>BS Video Gaming</option>
+                    <option>BS Installing and Downloading</option>
+                </select><br><br>
+            <button class="button-2" type="button" onclick="submitForm()">Submit</button>
+            </form>
+            <p id="output-2"></p>
+            <script src="lab5_scripts.js"></script>
+        </div>
+
+        <hr>
         
+        <div id="search_display">
+            <input type="text" id="search_id" placeholder="Enter Student ID">
+            <button class="button-3" type="button" onclick="find_student()">Search Student</button>
+            <p id="output-3"></p>
+        </div>
+
+        <div id="record_display">
+            <h3>Display All Students</h3>
+            <button class="button-4" type="button" onclick="display_list()">Display All</button>
+            <button class="button-4" type="button" onclick="hide_list()">Hide</button>
+            <p id="output-4"></p>
+        </div>
+
     </body>
 </html>
