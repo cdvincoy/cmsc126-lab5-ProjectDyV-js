@@ -70,7 +70,7 @@ hr {
 
 /* Record Display */
 h3 {
-      font-family: "IBM Plex Serif";
+    font-family: "IBM Plex Serif";
 }
 
 .button-4 {
@@ -87,4 +87,5 @@ h3 {
 
 table {
     margin: 0 auto;
+    border: 1.2px solid palevioletred;
 }

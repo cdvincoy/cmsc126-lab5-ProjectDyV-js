@@ -13,7 +13,7 @@ function time_now(){
 
 //This section is for the student registration.
 let students = [];
-let usedNumbers = [];
+let usedNumber = [];
 
 function Student(studentNumber, name, age, email, course){
     this.studentNumber = studentNumber;
@@ -28,9 +28,9 @@ function generateStudentNumber() {
     
     do {
         randomDigits  = Math.floor(10000 + Math.random() * 90000);
-    } while (usedNumbers.includes(randomDigits));
+    } while (usedNumber.includes(randomDigits));
 
-    usedNumbers.push(randomDigits);
+    usedNumber.push(randomDigits);
     let studentNumber = "2024" + randomDigits;
     return studentNumber;
 }
